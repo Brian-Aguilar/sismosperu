@@ -1,6 +1,4 @@
-const { Router } = require('express');
-const express = require('express');
-const mainTest = require('../test');
+const express = require("express");
 const { obtener_datos_sismos, obtener_id_sismo } = require('./controllers/datosismo_controller');
 // res.header("Access-Control-Allow-Origin", "*");
 const routeAPI = express.Router();
