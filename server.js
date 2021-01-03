@@ -15,8 +15,6 @@ app.use(express.json());
 
 app.use('/api/v1', routeAPI);
 
-// Test
-app.get("/test/", mainTest);
 
 app.use( (req, res, next) => {
   res.status(404).json({
