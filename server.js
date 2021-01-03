@@ -6,7 +6,6 @@ const { dbConnection } = require('./api/database/config');
 dbConnection();
 
 const routeAPI = require("./api/index");
-const mainTest = require("./test/index");
 
 const app = express();
 const port = process.env.CUSTOM_PORT || process.env.PORT;
