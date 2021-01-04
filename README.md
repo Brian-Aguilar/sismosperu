@@ -63,18 +63,18 @@ https://sismoperu.herokuapp.com/api/v1/get/:id // :id = 20210005
 {
   "ok": true,
   "body": {
-	"id_sismo": 20210005,
-	"archivo": "https://intranet.igp.gob.pe/reportes-acelerometricos/20210812.pdf",
-    "fecha": 1609685491000,
-	"magnitud": "3.5",
-	"referencia": "10 km al Sur de Tarata",
-	"departamento": "Tacna",
-	"provincia": "Tarata",
-	"latitud": "-17.5621",
-	"longitud": "-70.04",
-	"profundidad": "11",
-	"intensidad": "III Tarata"
-  },
+      "id_sismo": 20210005,
+      "archivo": "https://intranet.igp.gob.pe/reportes-acelerometricos/20210812.pdf",
+      "fecha": 1609685491000,
+      "magnitud": "3.5",
+      "referencia": "10 km al Sur de Tarata",
+      "departamento": "Tacna",
+      "provincia": "Tarata",
+      "latitud": "-17.5621",
+      "longitud": "-70.04",
+      "profundidad": "11",
+      "intensidad": "III Tarata"
+    },
 }
 ```
 
