@@ -2,7 +2,7 @@
 
 Página donde hice Web Scraping : [Ultimo Sismo](https://ultimosismo.igp.gob.pe/).
 
-###  URL Peticiones: 
+###  Peticiones / URL: 
 
 Para obtener los últimos 10 datos:
 
