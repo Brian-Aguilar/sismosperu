@@ -1,10 +1,7 @@
 const { request, response } = require("express");
 const Sismos = require("../models/sismos");
 const { obtenerSismosInternet } = require("../services/datossimos_service");
-const {
-	comprobar_respaldo_archivo,
-	formatear_dato,
-} = require("./backuparchivo_controller");
+const { formatear_dato } = require("./backuparchivo_controller");
 
 const obtener_datos_sismos = (req = request, res = response) => {
 	res.header("Access-Control-Allow-Origin", "*");
@@ -50,8 +47,6 @@ const sincronizacion_database = async (datosFaltantes = []) => {
 
 const obtener_datos_faltantes = async (datoInternet = []) => {
 	const ultimoID = await ultimoDato();
-	// TODO: podriamos obtener todos los ID e indentificar si falta uno y agregarlos
-	// Ya que podria ser de que eliminos uno por error y no se agregaria. ( Opcional )
 	let datosFaltantes = datoInternet.filter((i) => i.id_sismo > ultimoID);
 	return {
 		ok: isNaN(datosFaltantes),
